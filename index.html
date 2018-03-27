@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>UNCG Eats</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+	    crossorigin="anonymous">
+
+	<link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+	<script src="./node_modules/jquery/dist/jquery.min.js"></script>
+	<script src="main.js"></script>
+</head>
+
+<body class="bg-light">
+
+	<div class="container">
+
+		<div class="d-flex align-items-center p-3 my-3 text-white-50 uncg-blue-background rounded box-shadow">
+			<!-- <img class="mr-3" src="https://getbootstrap.com/assets/brand/bootstrap-outline.svg" alt="" width="48" height="48"> -->
+			<div class="lh-100">
+				<h6 class="mb-0 lh-100 uncg-gold-text">UNCG Unofficial Dining Guide</h6>
+				<small class="uncg-white-text">Samy Bencherif (c) 2018</small>
+			</div>
+		</div>
+
+		<div class="card bg-light">
+			<div class="card-body">
+				<h5 class="card-label card-title bg-light">Cafeteria</h5>
+				<div class="container">
+					<div id="FVOpen" class="alert alert-success" role="alert">
+						Fountain View Dining is currently open! Go eat!
+					</div>
+
+					<div id="FVWarning" class="alert alert-warning" role="alert">
+						Hurry! Fountain View Dining will only be open for another
+						<span class="FVTimeLeft">amount of minutes</span>.
+					</div>
+
+					<div id="FVClosing" class="alert alert-danger" role="alert">
+						Hurry! Fountain View Dining will only be open for another
+						<span class="FVTimeLeft">amount of minutes</span>.
+					</div>
+
+					<div id="FVClosed" class="alert alert-secondary" role="alert">
+						Fountain View Dining is currently closed.
+						<span class="badge uncg-blue-background badge-primary badge-pill">
+							<span class="FVTimeUntil">an amount of minutes</span>
+						</span>
+					</div>
+
+					<h6 id="menusTitle" class="card-title bg-light">Menus</h6>
+
+					<!-- if (breakfast.contains(uncgTime)) {
+						opts.push('breakfast');
+					}
+
+					if (continental.contains(uncgTime)) {
+						opts.push('continental');
+					}
+
+					if (lunchBrunch.contains(uncgTime)) {
+						opts.push('lunch / brunch');
+					}
+
+					if (lightLunch.contains(uncgTime)) {
+						opts.push('light lunch');
+					}
+
+					if (dinner.contains(uncgTime)) {
+						opts.push('dinner');
+					} -->
+
+					<ul id="menusList" class="list-group">
+						<li class="list-group-item d-flex justify-content-between align-items-center">Breakfast
+							<span class="BreakfastTime badge badge-secondary badge-pill">some mins left</span>
+						</li>
+						<li class="list-group-item d-flex justify-content-between align-items-center">Continental
+							<span class="ContinentalTime badge badge-secondary badge-pill">some mins left</span>
+						</li>
+						<li class="list-group-item d-flex justify-content-between align-items-center">Lunch / Brunch
+							<span class="LunchTime badge badge-secondary badge-pill">some mins left</span>
+						</li>
+						<li class="list-group-item d-flex justify-content-between align-items-center">Light Lunch
+							<span class="LLunchTime badge badge-secondary badge-pill">some hrs left</span>
+						</li>
+						<li class="list-group-item d-flex justify-content-between align-items-center">Dinner
+							<span class="DinnerTime badge badge-secondary badge-pill">some mins left</span>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+
+	</div>
+</body>
+
+</html>
